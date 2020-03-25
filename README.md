@@ -26,7 +26,10 @@ You can create an anaconda environment called `mesh_funcspace` using
 conda env create -f environment.yaml
 conda activate mesh_funcspace
 ```
-
+Before going further, add the numpy to your PATH.
+```
+export CFLAGS="-I /opt/conda/envs/mesh_funcspace/lib/python3.6/site-packages/numpy/core/include $CFLAGS"
+```
 Next, compile the extension modules.
 You can do this via
 ```
