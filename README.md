@@ -30,6 +30,10 @@ Before going further, add the numpy to your PATH.
 ```
 export CFLAGS="-I /opt/conda/envs/mesh_funcspace/lib/python3.6/site-packages/numpy/core/include $CFLAGS"
 ```
+If some unable to find numpy array.h file try this:
+```
+cp -r /opt/conda/lib/python3.6/site-packages/numpy/core/include/numpy /usr/local/include
+```
 Next, compile the extension modules.
 You can do this via
 ```
